@@ -9,6 +9,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger)
 
 export const metadata: Metadata = {
   title: "Mozorita Clone",
+  icons:"images/logo.png",
   description: "A clone of the Mozorita website built with Next.js and Tailwind CSS.",
 };
 

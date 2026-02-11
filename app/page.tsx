@@ -2,6 +2,8 @@
 import gsap from "gsap"
 import { SplitText } from "gsap/all"
 import { ScrollTrigger } from "gsap/all"
+import Navbar from "./components/navbar"
+import HeroSection from "./components/herosection"
 
 gsap.registerPlugin(SplitText, ScrollTrigger)
 const GsapTop = () => {
@@ -26,8 +28,13 @@ const GsapTop = () => {
 
 export default function Home(){
   return (
-    <div className="bg-white dark:bg-black min-h-screen w-screen flex  justify-center overflow-hidden">
-      <h1 onClick={GsapTop} id='title' className="text-3xl font-bold  text-black dark:text-white"> Mozorita Clone</h1>
+    <main>
+
+    <Navbar/>
+    <HeroSection/>
+    <div className="page min-h-screen">
+
     </div>
+    </main>
   )
 }
