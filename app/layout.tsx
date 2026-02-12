@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressContentEditableWarning
+      <body suppressContentEditableWarning={true}
         className={`dm-serif-text-regular antialiased`}
       >
         {children}
